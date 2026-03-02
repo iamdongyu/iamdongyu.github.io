@@ -86,9 +86,10 @@ ul { list-style: none; }
 
 .section-padding { padding: 80px 0; }
 .flex-center { display: flex; align-items: center; justify-content: center; }
+
+
 .column { flex-direction: column; }
 
-/* 滚动条美化 */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--bg-body); }
 ::-webkit-scrollbar-thumb { background: var(--text-muted); border-radius: 4px; opacity: 0.5; }
@@ -97,14 +98,17 @@ ul { list-style: none; }
    3. Navigation (Glassmorphism)
    ========================================= */
 nav {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
-  background: var(--bg-glass);
+  left: 0;
+  width: 100%;
+height: 70px; 
+  z-index: 1000;
+background: var(--bg-glass);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+
   border-bottom: 1px solid var(--border-light);
-  transition: background-color 0.4s ease, border-color 0.4s ease;
 }
 
 .nav-container {
@@ -327,11 +331,10 @@ h2::after {
 .project-info p {
   font-size: 0.95rem;
   color: var(--text-muted);
-  margin-bottom: 20px;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  margin-bottom: 16px;
+  display: block;
+  overflow: visible;
+  word-break: break-word;
 }
 
 .project-link {
@@ -486,7 +489,7 @@ footer {
    ========================================= */
 .opensource-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
@@ -511,7 +514,7 @@ footer {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .os-title {
@@ -705,3 +708,174 @@ nav {
 .project-info p {
   margin-bottom: 16px; 
 }
+
+.practice-img-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.practice-img {
+  width: 48%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.practice-img {
+  width: 48%;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.practice-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================================
+   13. Timeline Dual Layout Upgrade
+   ========================================= */
+
+.timeline-inner {
+  display: grid;
+   grid-template-columns: 60% 40%;
+  gap: 24px;
+  align-items: start;
+}
+
+.timeline-left {
+  padding-right: 10px;
+}
+
+.timeline-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.timeline-right img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.timeline-right img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.copyable-text {
+  user-select: text;
+  cursor: text;
+  transition: background-color 0.25s ease, border-radius 0.25s ease;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.copyable-text:hover {
+  background-color: var(--bg-hover);
+}
+
+[data-theme="dark"] .copyable-text:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.inline-link {
+  color: var(--primary);
+  font-size: 0.9rem;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+
+.inline-link:hover {
+  opacity: 1;
+}
+
+.preview-img {
+  cursor: zoom-in;
+  transition: transform 0.25s ease;
+}
+
+.preview-img:hover {
+  transform: scale(1.03);
+}
+
+
+.img-modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+  justify-content: center;
+  align-items: center;
+}
+
+.img-modal-content {
+  max-width: 85%;
+  max-height: 85%;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.img-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
+
+.timeline-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 14px;
+  color: var(--primary);
+  opacity: 0.75;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.timeline-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px) scale(0.98);
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  padding-top: 70px;
+}
+

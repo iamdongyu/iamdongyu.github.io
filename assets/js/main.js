@@ -1,95 +1,136 @@
 (() => {
   const PROJECTS = [
     {
-      img: 'assets/images/Portfolio-01.png',
+      img: 'assets/images/research1.jpg',
       titleKey: 'projects.item1.title',
       descKey: 'projects.item1.desc',
       tagsKey: 'projects.item1.tags',
-      link: 'pages/projects/project1.html',
     },
     {
-      img: 'assets/images/Portfolio-02.png',
+      img: 'assets/images/research2.jpg',
       titleKey: 'projects.item2.title',
       descKey: 'projects.item2.desc',
       tagsKey: 'projects.item2.tags',
-      link: 'pages/projects/project2.html',
     },
     {
-      img: 'assets/images/Portfolio-03.png',
+      img: 'assets/images/research3.jpg',
       titleKey: 'projects.item3.title',
       descKey: 'projects.item3.desc',
       tagsKey: 'projects.item3.tags',
-      link: 'pages/projects/project3.html',
     },
   ];
 
   const OPEN_SOURCE_ITEMS = [
-    { key: 'opensource.item1', linkCode: 'https://github.com/Lain-Ego0/BRS-Parallel-Robot', linkDoc: null },
-    { key: 'opensource.item2', linkCode: 'https://github.com/Lain-Ego0/SliverWolf-ArmRobotDog', linkDoc: null },
-    { key: 'opensource.item3', linkCode: null, linkDoc: 'https://wcn9j5638vrr.feishu.cn/wiki/space/7570988375279517715' },
-    { key: 'opensource.item4', linkCode: 'https://github.com/Lain-Ego0/ROBOCON2024-R1', linkDoc: null },
-    { key: 'opensource.item5', linkCode: 'https://github.com/Lain-Ego0/ROBOCON2024-3508DOG', linkDoc: null },
-    { key: 'opensource.item6', linkCode: 'https://github.com/Lain-Ego0/HTDW4438_Isaacgym', linkDoc: null },
-    { key: 'opensource.item7', linkCode: 'https://github.com/Lain-Ego0/HTDW4438-OpenDog', linkDoc: null },
-    { key: 'opensource.item8', linkCode: 'https://github.com/Lain-Ego0/Lain-s-Note', linkDoc: null },
-    { key: 'opensource.item9', linkCode: 'https://github.com/Lain-Ego0/Lain-s-PDF2PNG', linkDoc: null },
+    {  key: 'opensource.item1',
+    img1: 'group-1.jpg',
+    img2: 'group-2.jpg',
+    linkCode: null,
+    linkDoc: null
+  },
+  { 
+    key: 'opensource.item2',
+    img1: 'activity1-1.jpg',
+    img2: 'activity1-2.jpg',
+    linkCode: null,
+    linkDoc: null
+  },
+  { 
+    key: 'opensource.item3',
+    img1: 'activity2-1.jpg',
+    img2: 'activity2-2.jpg',
+    linkCode: null,
+    linkDoc: null
+  },
+  { 
+    key: 'opensource.item4',
+    img1: 'activity3-1.jpg',
+    img2: 'activity3-2.jpg',
+    linkCode: null,
+    linkDoc: null },
   ];
 
-  const TIMELINE_EVENTS = [
-    'timeline.event9',
-    'timeline.event8',
-    'timeline.event7',
-    'timeline.event6',
-    'timeline.event5',
-    'timeline.event4',
-    'timeline.event3',
-    'timeline.event2',
-    'timeline.event1',
-  ];
+const TIMELINE_EVENTS = [
+  'timeline.event4',
+  'timeline.event3',
+  'timeline.event2',
+  'timeline.event1'
+];
+
+const TIMELINE_IMAGES = {
+  'timeline.event4': [
+    'assets/images/work4-1.jpg',
+    'assets/images/work4-2.jpg'
+  ],
+  'timeline.event3': [
+    'assets/images/work3-1.jpg',
+    'assets/images/work3-2.jpg'
+  ],
+  'timeline.event2': [
+    'assets/images/work2-1.jpg',
+    'assets/images/work2-2.jpg'
+  ],
+  'timeline.event1': [
+    'assets/images/work1-1.jpg',
+    'assets/images/work1-2.jpg'
+  ]
+};
 
   const TECH_STACK = [
-    {
-      category: 'skills.embedded',
-      items: [
-        { name: 'STM32', icon: 'fas fa-microchip' },
-        { name: 'ESP32', icon: 'fas fa-wifi' },
-        { name: 'FreeRTOS', icon: 'fas fa-cogs' },
-        { name: 'C/C++', icon: 'fas fa-code' },
-      ],
-    },
-    {
-      category: 'skills.robotics',
-      items: [
-        { name: 'ROS/ROS2', icon: 'fas fa-robot' },
-        { name: 'Gazebo', icon: 'fas fa-cube' },
-        { name: 'Motion Control', icon: 'fas fa-wave-square' },
-        { name: 'RL', icon: 'fas fa-brain' },
-      ],
-    },
-    {
-      category: 'skills.hardware',
-      items: [
-        { name: 'Altium', icon: 'fas fa-pencil-ruler' },
-        { name: 'SolidWorks', icon: 'fas fa-drafting-compass' },
-        { name: 'PCB', icon: 'fas fa-layer-group' },
-      ],
-    },
-    {
-      category: 'skills.software',
-      items: [
-        { name: 'Linux', icon: 'fab fa-linux' },
-        { name: 'Python', icon: 'fab fa-python' },
-        { name: 'Git', icon: 'fab fa-git-alt' },
-      ],
-    },
-  ];
+  {
+    category: 'skills.embedded',
+    items: [
+      { key: 'skills.items.monitor', icon: 'fas fa-user-tie' },
+      { key: 'skills.items.gpa', icon: 'fas fa-chart-line' },
+      { key: 'skills.items.rank', icon: 'fas fa-ranking-star' },
+      { key: 'skills.items.scholarship', icon: 'fas fa-award' },
+    ],
+  },
+  {
+    category: 'skills.robotics',
+    items: [
+      { key: 'skills.items.provinceCenter', icon: 'fas fa-building-columns' },
+      { key: 'skills.items.viceMinisterFilm', icon: 'fas fa-users' },
+      { key: 'skills.items.viceMinisterVolunteer', icon: 'fas fa-hand-holding-heart' },
+      { key: 'skills.items.techStation', icon: 'fas fa-laptop' },
+    ],
+  },
+  {
+    category: 'skills.software',
+    items: [
+      { key: 'skills.items.jiangsuAnimation', icon: 'fas fa-trophy' },
+      { key: 'skills.items.yanchengCreative', icon: 'fas fa-medal' },
+    ],
+  },
+  {
+    category: 'skills.hardware',
+    items: [
+      { key: 'skills.items.adNational', icon: 'fas fa-crown' },
+      { key: 'skills.items.greatHall', icon: 'fas fa-landmark' },
+      { key: 'skills.items.lanqiao', icon: 'fas fa-trophy' },
+      { key: 'skills.items.ncda', icon: 'fas fa-medal' },
+      { key: 'skills.items.academyAd', icon: 'fas fa-award' },
+      { key: 'skills.items.videoCompetition', icon: 'fas fa-star' },
+    ],
+  },
+];
 
-  const CONTACT_LINKS = [
-    { icon: 'fab fa-bilibili', key: 'contact.bilibili', link: 'https://space.bilibili.com/385516781/upload/video' },
-    { icon: 'fab fa-github', key: 'contact.github', link: 'https://github.com/Lain-Ego0' },
-    { icon: 'fab fa-twitter', key: 'contact.twitter', link: 'https://x.com/Lain_Ego0' },
-    { icon: 'fab fa-zhihu', key: 'contact.zhihu', link: 'https://www.zhihu.com/people/hua-99-50-21' },
-  ];
+ const CONTACT_LINKS = [
+  {
+    icon: 'fas fa-envelope',
+    key: 'contact.email',
+    link: 'mailto:yudong196@163.com'
+  },
+  {
+    icon: 'fab fa-github',
+    key: 'contact.github',
+    link: 'https://github.com/iamdongyu'
+  },
+  {
+    icon: 'fas fa-file-download',
+    key: 'contact.resume',
+    link: 'assets/files/yudresume .pdf'
+  }
+];
 
   function qs(selector, root = document) {
     return root.querySelector(selector);
@@ -164,9 +205,8 @@
         </div>
         <div class="project-info">
           <h3>${t(project.titleKey)}</h3>
-          <p>${t(project.descKey)}</p>
+          <p class="copyable-text">${t(project.descKey)}</p>
           ${tagsHtml}
-          <a href="${project.link}" class="project-link">${t('projects.viewDetail')}</a>
         </div>
       `;
       grid.appendChild(card);
@@ -197,7 +237,11 @@
           <div class="os-title">${t(`${item.key}.title`)}</div>
           <i class="fas fa-code-branch" style="color:var(--primary); opacity:0.5;"></i>
         </div>
-        <p class="os-desc">${t(`${item.key}.desc`)}</p>
+         
+        <div class="practice-img-wrapper">
+             <img src="assets/images/${item.img1}" class="practice-img">
+             <img src="assets/images/${item.img2}" class="practice-img">
+        </div>
         <div class="os-tags">${tagsHtml}</div>
         <div class="os-actions">${buttonsHtml}</div>
       `;
@@ -213,14 +257,34 @@
     TIMELINE_EVENTS.forEach((key) => {
       const item = document.createElement('div');
       item.className = 'timeline-item';
-      item.innerHTML = `
-        <div class="timeline-dot"></div>
-        <span class="timeline-date">${t(`${key}.date`)}</span>
-        <div class="timeline-content">
-          <h3>${t(`${key}.title`)}</h3>
-          <p>${t(`${key}.desc`)}</p>
-        </div>
-      `;
+     const images = TIMELINE_IMAGES[key] || [];
+
+item.innerHTML = `
+  <div class="timeline-dot"></div>
+
+  <div class="timeline-inner">
+
+    <div class="timeline-left">
+      <span class="timeline-date">${t(`${key}.date`)}</span>
+      <div class="timeline-content">
+        <h3>${t(`${key}.title`)}</h3>
+        <p>${t(`${key}.desc`)}</p>
+${t(`${key}.linkText`) !== `${key}.linkText` ? `
+  <a href="${t(`${key}.linkUrl`)}" target="_blank" class="timeline-link">
+    ${t(`${key}.linkText`)}
+  </a>
+` : ''}
+      </div>
+    </div>
+
+    <div class="timeline-right">
+      ${images.map(img => `
+  <img src="${img}" alt="" class="preview-img">
+`).join('')}
+    </div>
+
+  </div>
+`;
       container.appendChild(item);
     });
   }
@@ -232,7 +296,7 @@
 
     TECH_STACK.forEach((group) => {
       const itemsHtml = group.items
-        .map((s) => `<div class="skill-badge"><i class="${s.icon}"></i> ${s.name}</div>`)
+        .map((s) => `<div class="skill-badge"><i class="${s.icon}"></i> ${t(s.key)}</div>`)
         .join('');
 
       const col = document.createElement('div');
@@ -280,10 +344,114 @@
     });
   }
 
+function initImagePreview() {
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImg");
+  const closeBtn = document.querySelector(".img-close");
+
+  document.addEventListener("click", function (e) {
+    if (e.target.classList.contains("preview-img")) {
+      modal.style.display = "flex";
+      modalImg.src = e.target.src;
+    }
+  });
+
+  if (closeBtn) {
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    };
+  }
+
+  if (modal) {
+    modal.onclick = function (e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      modal.style.display = "none";
+    }
+  });
+}
+
+function initScrollReveal() {
+  const elements = document.querySelectorAll('.reveal');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  elements.forEach(el => observer.observe(el));
+}
+
+function initBreathingScroll() {
+  const sections = document.querySelectorAll('section');
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+
+    sections.forEach(section => {
+      const speed = 0.01; 
+      section.style.transform =
+        `translateY(${scrollY * speed * -1}px)`;
+    });
+  });
+}
+
+function initPageSnapScroll() {
+  const sections = Array.from(document.querySelectorAll("section"));
+  let isScrolling = false;
+
+  function getCurrentSectionIndex() {
+    const scrollY = window.scrollY;
+    return sections.findIndex((section, index) => {
+      const top = section.offsetTop;
+      const next = sections[index + 1];
+      const nextTop = next ? next.offsetTop : Infinity;
+      return scrollY >= top && scrollY < nextTop;
+    });
+  }
+
+  function scrollToSection(index) {
+    if (index < 0 || index >= sections.length) return;
+    isScrolling = true;
+
+    window.scrollTo({
+  top: sections[index].offsetTop - 70,
+  behavior: "smooth"
+});
+  
+
+    setTimeout(() => {
+      isScrolling = false;
+    }, 700);
+  }
+
+  window.addEventListener("wheel", (e) => {
+    if (isScrolling) return;
+
+    const currentIndex = getCurrentSectionIndex();
+
+    if (e.deltaY > 0) {
+      scrollToSection(currentIndex + 1);
+    } else {
+      scrollToSection(currentIndex - 1);
+    }
+  });
+}
+
   document.addEventListener('DOMContentLoaded', () => {
     initThemeToggle();
     initLangToggle();
     initSmoothScroll();
+    initImagePreview();
   });
 
   window.addEventListener('i18nLoaded', () => {
@@ -293,5 +461,8 @@
     initTimeline();
     initTechStack();
     initContactLinks();
+    initScrollReveal();
+initPageSnapScroll();
   });
 })();
+

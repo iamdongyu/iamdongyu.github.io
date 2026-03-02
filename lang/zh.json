@@ -1,37 +1,37 @@
 {
   "nav": {
     "home": "首页",
-    "projects": "个人项目",
-    "opensource": "开源贡献",
-    "timeline": "时间轴",
-    "skills": "技术栈",
-    "contact": "联系我",
+    "projects": "科研能力",
+    "opensource": "国际学术活动体验",
+    "timeline": "工作与实践经历",
+    "skills": "综合荣誉与竞赛成果",
+    "contact": "联系方式",
     "documents": "文档"
   },
   "intro": {
-    "avatarAlt": "Lain-Ego的头像",
-    "title": "你好，我是Lain",
-    "desc": "机器人开发爱好者，大三在读，目前于人形机器人公司实习<br>擅长MCU与Linux应用层开发<br>持续钻研运动控制、强化学习及机器人感知技术<br>邮箱：lain-ego@qq.com"
+   "avatarAlt": "Dongyu的头像",
+  "title": "你好，我是董宇",
+  "desc": "认知神经科学，临床咨询爱好者<br>研究兴趣：应用心理 · 数据研究 · 行为分析<br>具备科研写作与数据处理能力<br>邮箱：yudong196@163.com"
   },
   "projects": {
-    "title": "个人项目",
-    "imgAlt": "项目图片",
-    "viewDetail": "查看详情",
-    "item1": {
-      "title": "ROBOCON 2025 足式机器人",
-      "desc": "2025赛季ROBOCON足式机器人全栈研发。负责从类植保无人机碳管装配工艺机械建模、力控制算法到3D雷达建图自主导航技术。带领团队在全国180余支队伍中取得竞速赛第30名、障碍赛第31名、越野赛34名的优异成绩。",
-      "tags": ["Motion Control", "SLAM", "Mechanical Design", "LiDAR"]
-    },
-    "item2": {
-      "title": "仿生波士顿大龙虾潜航机器人",
-      "desc": "浮力可控多自由度龙虾水下机器人。负责控制系统开发（步进蠕动泵、电机/舵机驱动、陀螺仪融合、IIC编码器闭环），设计异形多旋翼矢量推进模型实现全向移动。硬件方面负责驱动选型与防水设计。获福建省大学生智能海洋装备大赛特等奖。",
-      "tags": ["Embedded Systems", "Vector Propulsion", "Hardware Design", "Waterproofing"]
-    },
-    "item3": {
-      "title": "智能插秧收获一体机器人",
-      "desc": "基于FreeRTOS的智能插秧收获农业机器人。通过控制DJI3508电机完成夹爪抬升与全向底盘控制，定位精度±5mm。参与气路设计与硬件布线，支持双机器人协同作业。",
-      "tags": ["FreeRTOS", "Motor Control", "Multi-robot Synergy"]
-    }
+   "title": "科研能力",
+  "imgAlt": "项目图片",
+  "viewDetail": "查看详情",
+  "item1": {
+    "title": "文献阅读与写作",
+    "desc": "IELETS 6.0",
+    "tags": ["科研写作", "文献阅读", "学术规范"]
+   },
+  "item2": {
+    "title": "科研配图",
+    "desc": "历史参与绘图设计： Qi H, Ou S S, Jia Y H, et al. Cross-temporal framework for driving behavior impact on electric vehicle battery health[J]. Communications in Transportation Research, 2026. IF14.5 SSCI/SCIE双检索, 入选中国科技期刊卓越行动计划.",
+    "tags": ["Adobe illustrator", "Photoshop", "ppt", "Visio"]
+   },
+  "item3": {
+    "title": "代码能力",
+    "desc": "复现Pytorch图像分类开源项目：https://github.com/fendouai/PyTorchDocs ",
+    "tags": ["Python", "PyTorch", "Pycharm"]
+   }
   },
   "project1": {
     "title": "全国大学生机器人大赛ROBOCON足式机器人赛题",
@@ -57,28 +57,28 @@
     "imgAlt4": "细节展示图 3"
   },
   "opensource": {
-    "title": "开源贡献",
+    "title": "国际学术活动体验",
     "btnCode": "代码仓库",
     "btnDoc": "在线文档",
     "item1": {
-    "title": "BRS-并联四足机器人",
-    "desc": "BLACK☆ROCK SHOOTER，全栈完成的并联结构四足机器人项目，完整方案全部开源，参加了2025年ROBOCON全国赛。",
-    "tags": ["Robotics", "Mechanical Design", "Open Source"]
+    "title": "课题组宣传视频制作",
+    "desc": "",
+    "tags": [""]
   },
   "item2": {
-    "title": "SliverWolf 桌面级四足机器人",
-    "desc": "使用9g小型舵机的直驱位控串联四足，接入IMU控制、语音控制，完成多种步态与机械臂协同取物功能。",
-    "tags": ["STM32", "Voice Control", "IMU", "Robotic Arm"]
+    "title": "澳门·国际会议体验",
+    "desc": "",
+    "tags": [""]
   },
   "item3": {
-    "title": "四足机器人飞书知识库",
-    "desc": "赛后详细编写的四足机器人研发知识库，覆盖从基础认知到实践开发、强化学习应用的全流程内容",
-    "tags": ["Documentation", "Knowledge Sharing"]
+    "title": "大连·国际会议体验",
+    "desc": "",
+    "tags": [""]
   },
   "item4": {
-    "title": "ROBOCON 2024 R1 机器人",
-    "desc": "ROBOCON 2024 比赛 R1 机器人的底层控制代码仓库，包含机械方案、全向底盘运动学解算与任务机构逻辑。",
-    "tags": ["Robocon", "STM32", "C", "Chassis Control"]
+    "title": "广州·国际会议体验",
+    "desc": "",
+    "tags": [""]
   },
   "item5": {
     "title": "3508足式机器人驱动验证平台",
@@ -110,68 +110,68 @@
 
   },
   "timeline": {
-    "title": "经历时间轴",
-    "event1": {
-      "date": "2024-05",
-      "title": "开源 SliverWolf 桌面四足",
-      "desc": "发布 SliverWolf，一款具备语音控制与机械臂协同作业能力的桌面级串联四足机器人。"
-    },
-    "event2": {
-      "date": "2024-07",
-      "title": "2024ROBOCON全国赛",
-      "desc": "基于FreeRTOS完成R1机器人嵌入式控制系统开发，实现±5mm定位精度，球体发射、夹爪夹取功能。"
-    },
-    "event3": {
-      "date": "2024-08",
-      "title": "2024福建省大学生电子设计大赛",
-      "desc": "基于MSPM0G3507开发自动驾驶小车系统，进入省测。"
-    },
-    "event4": {
-      "date": "2024-11",
-      "title": "福建省大学生智能海洋装备设计制作大赛",
-      "desc": "负责开发浮力可控多自由度龙虾水下机器人的控制系统，获特等奖。"
-    },
-    "event5": {
-      "date": "2024-12",
-      "title": "2024 世界航海装备大会",
-      "desc": "代表福建理工大学参展，展示仿生波士顿大龙虾机器人，获新华社等媒体报道。"
-    },
-    "event6": {
-      "date": "2025-07",
-      "title": "2025 ROBOCON 全国赛",
-      "desc": "负责足式机器人全栈研发。获足式机器人竞速赛全国30名、障碍赛31名、越野赛34名，共三项国二佳绩。"
-    },
-    "event7": {
-      "date": "2025-08",
-      "title": "2025全国大学生电子设计大赛",
-      "desc": "负责自动测距系统的功率计硬件设计与制作，获全国二等奖。"
-    },
-    "event8": {
-      "date": "2025-09",
-      "title": "开源 BRS 并联四足机器人",
-      "desc": "在GitHub开源BRS并联四足机器人的机械结构与控制代码。"
-    },
-    "event9": {
-      "date": "2025-10至2026-3",
-      "title": "高擎机电激情实习中",
-      "desc": "负责HTDW4438仿生四足机器人的机械设计、控制算法开发与系统集成测试,分为开源版本与产品化版本"
-    }
+    "title": "工作与实践经历",
+  "event1": {
+    "date": "2024-08 — 2025-03",
+    "title": "广州新航道",
+    "desc": "金牌雅思助教，负责教学辅助与课程管理。"
   },
+  "event2": {
+    "date": "2023-07 — 2024-03",
+    "title": "北京久医文化传媒",
+    "desc": " 全平台百万粉丝博主短视频运营，参与内容策划与数据分析。"
+  },
+  "event3": {
+    "date": "2022-08 — 2022-11",
+    "title": "阿里影业 MCN 事业部",
+    "desc": "抖音千万粉丝博主内容策划实习生，参与项目内容设计与脚本撰写。",
+    "linkText": "查看相关抖音账号",
+    "linkUrl": "https://www.douyin.com/user/MS4wLjABAAAAQyEMZsWy5r3tOgkVQIFTT3HcLksDSPjmgNbe8mMJniA?from_tab_name=main"
+  },
+  "event4": {
+    "date": "2020-06 — 2020-09",
+    "title": "成都朴新教育",
+    "desc": "K12金牌讲师助教。"
+  }
+  },
+
   "skills": {
-    "title": "技术栈",
-    "embedded": "嵌入式开发",
-    "robotics": "机器人技术",
-    "software": "软件与工具",
-    "hardware": "硬件设计"
-  },
+  "title": "综合荣誉与竞赛成果",
+  "embedded": "班级层面表现",
+  "robotics": "校级组织与荣誉",
+  "software": "市省级竞赛成果",
+  "hardware": "综合竞赛与专业荣誉",
+
+  "items": {
+    "monitor": "优秀学习委员",
+    "gpa": "GPA 3.47 / 4.0（专业前列）",
+    "rank": "多次成绩排名前二",
+    "scholarship": "多次获得班级奖学金",
+
+    "provinceCenter": "省级实验文化中心成员",
+    "viceMinisterFilm": "校影视创意协会副部长",
+    "viceMinisterVolunteer": "青年志愿者协会副部长",
+    "techStation": "电脑技术思源驿站成员",
+
+    "jiangsuAnimation": "江苏省盐城市动画设计二等奖",
+    "yanchengCreative": "盐城市“老同学·爱盐城”创意活动二等奖",
+
+    "adNational": "全国大学生广告艺术大赛 国赛二等奖",
+    "greatHall": "线上人民大会堂领奖",
+    "lanqiao": "蓝桥杯视觉艺术 国赛一、二、三等奖",
+    "ncda": "未来设计师NCDA艺术设计 省级二等奖",
+    "academyAd": "全国大学生广告艺术节学院奖 校级三等奖",
+    "videoCompetition": "文学院 专业技能创意视频大赛 一等奖"
+  }
+},
+
   "contact": {
-    "title": "联系我",
-    "bilibili": "哔哩哔哩",
-    "github": "代码仓库",
-    "twitter": "推特",
-    "zhihu": "知乎"
+    "title": "联系方式",
+    "email": "邮箱",
+    "github": "GitHub",
+    "resume": "简历"
   },
   "footer": {
-    "copyright": "© 2023-2025 Lain-Ego | 个人主页"
+    "copyright": "© 2026 Dongyu | Personal Academic Homepage"
   }
 }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lain-Ego's Homepage</title>
+  <title>Dongyu's Homepage</title>
   
   <script>
     const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
@@ -17,7 +17,7 @@
   <nav>
     <div class="container nav-container">
       <a href="#" class="logo">
-        <span class="logo-text">Lain-Ego</span>
+        <span class="logo-text">Dongyu</span>
         <div class="logo-dot"></div>
       </a>
       
@@ -48,8 +48,8 @@
         <img src="assets/images/Avatar.jpg" alt="Avatar" class="avatar" data-i18n="intro.avatarAlt">
         <div class="avatar-glow"></div>
       </div>
-      <h1 class="gradient-text" data-i18n="intro.title">Hello, I'm Lain-Ego</h1>
-      <p class="subtitle" data-i18n="intro.desc">...</p>
+      <h1 class="gradient-text" data-i18n="intro.title"></h1>
+      <p class="subtitle" data-i18n="intro.desc"></p>
     </div>
   </section>
 
@@ -88,9 +88,15 @@
     </div>
   </section>
 
-  <footer data-i18n="footer.copyright">© 2025 Lain-Ego. All rights reserved.</footer>
+  <footer>© 2025 Dongyu. All rights reserved.</footer>
 
   <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
+
+<div class="img-modal" id="imgModal">
+  <span class="img-close">&times;</span>
+  <img class="img-modal-content" id="modalImg">
+</div>
+
 </body>
 </html>
