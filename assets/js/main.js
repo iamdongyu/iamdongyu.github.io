@@ -128,7 +128,7 @@ const TIMELINE_IMAGES = {
   {
     icon: 'fas fa-file-download',
     key: 'contact.resume',
-    link: 'assets/files/yudresume .pdf'
+    link: 'assets/files/Yudresume.pdf?v=20260302'
   }
 ];
 
@@ -201,7 +201,7 @@ const TIMELINE_IMAGES = {
       card.className = 'card';
       card.innerHTML = `
         <div class="project-thumbnail-wrapper">
-          <img src="${project.img}" alt="${t('projects.imgAlt')}" class="project-thumbnail">
+          <img src="${project.img}" loading="lazy" alt="${t('projects.imgAlt')}" class="project-thumbnail">
         </div>
         <div class="project-info">
           <h3>${t(project.titleKey)}</h3>
@@ -239,8 +239,8 @@ const TIMELINE_IMAGES = {
         </div>
          
         <div class="practice-img-wrapper">
-             <img src="assets/images/${item.img1}" class="practice-img">
-             <img src="assets/images/${item.img2}" class="practice-img">
+             <img src="assets/images/${item.img1}" loading="lazy" class="practice-img">
+             <img src="assets/images/${item.img2}" loading="lazy" class="practice-img">
         </div>
         <div class="os-tags">${tagsHtml}</div>
         <div class="os-actions">${buttonsHtml}</div>
@@ -279,7 +279,7 @@ ${t(`${key}.linkText`) !== `${key}.linkText` ? `
 
     <div class="timeline-right">
       ${images.map(img => `
-  <img src="${img}" alt="" class="preview-img">
+  <img src="${img}" loading="lazy" alt="" class="preview-img">
 `).join('')}
     </div>
 
@@ -392,13 +392,15 @@ function initScrollReveal() {
 }
 
 function initBreathingScroll() {
+  if (window.innerWidth <= 768) return;
+
   const sections = document.querySelectorAll('section');
 
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
 
     sections.forEach(section => {
-      const speed = 0.01; 
+      const speed = 0.01;
       section.style.transform =
         `translateY(${scrollY * speed * -1}px)`;
     });
@@ -406,6 +408,7 @@ function initBreathingScroll() {
 }
 
 function initPageSnapScroll() {
+   if (window.innerWidth < 768) return;
   const sections = Array.from(document.querySelectorAll("section"));
   let isScrolling = false;
 

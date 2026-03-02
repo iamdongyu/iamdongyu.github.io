@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 /* =========================================
    1. Design Token & Themes
    ========================================= */
@@ -116,6 +120,10 @@ background: var(--bg-glass);
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;  
 }
 
 .logo {
@@ -197,6 +205,7 @@ background: var(--bg-glass);
   padding: 100px 0 60px;
   position: relative;
   text-align: center;
+  overflow: hidden;  
 }
 
 /* 背景装饰球 */
@@ -243,7 +252,7 @@ background: var(--bg-glass);
 .avatar-container:hover .avatar-glow { opacity: 0.7; }
 
 .gradient-text {
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 6vw, 3rem);
   font-weight: 800;
   margin-bottom: 16px;
   background: var(--gradient-title);
@@ -451,7 +460,20 @@ footer {
    8. Mobile Responsive
    ========================================= */
 @media (max-width: 768px) {
-  .nav-links { display: none; } /* 暂时简化手机端 */
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-actions {
+    gap: 10px;
+  }
+
+  .nav-controls {
+    gap: 6px;
+  }
+
+}
   
   .intro { padding-top: 60px; }
   .gradient-text { font-size: 2.2rem; }
@@ -588,7 +610,7 @@ footer {
 
 .timeline-dot {
   position: absolute;
-  left: -35px; /* Adjust based on padding */
+  left: -20px; /* Adjust based on padding */
   top: 5px;
   width: 12px;
   height: 12px;
@@ -808,17 +830,19 @@ nav {
 
 
 .img-modal {
-  display: none;
   position: fixed;
-  z-index: 2000;
-  left: 0;
-  top: 0;
+  inset: 0;
+
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(3px);
-  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.85);
+
+  display: none;
   align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
 }
 
 .img-modal-content {
@@ -871,7 +895,6 @@ html, body {
 }
 
 body {
-  overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
@@ -879,3 +902,128 @@ body {
   padding-top: 70px;
 }
 
+@media (max-width: 768px) {
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-right {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .timeline-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-right {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .skills-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 768px)
+
+/* 平板 */
+@media (max-width: 1024px)
+
+/* 桌面 */
+默认
+
+@media (max-width: 768px) {
+
+  nav {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+#modalImg {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+}
+
+.img-modal {
+  touch-action: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+nav * {
+  min-width: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+
+  .timeline-container {
+    padding-left: 20px;
+  }
+
+  .timeline-dot {
+    left: -15px;
+  }
+
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+html, body {
+  overflow-x: hidden !important;
+  width: 100vw !important;
+}
