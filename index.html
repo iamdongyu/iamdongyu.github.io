@@ -98,5 +98,12 @@
   <img class="img-modal-content" id="modalImg">
 </div>
 
+<script>
+document.querySelectorAll("img").forEach(img=>{
+  img.loading="lazy";
+  img.decoding="async";
+});
+</script>
+
 </body>
 </html>

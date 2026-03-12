@@ -893,7 +893,7 @@ html, body {
 
 @media (min-width: 769px) {
   body {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
   }
 }
 
@@ -980,3 +980,4 @@ html, body {
   }
 
 }
+
