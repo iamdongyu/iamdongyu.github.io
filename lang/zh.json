@@ -11,16 +11,16 @@
   "intro": {
    "avatarAlt": "Dongyu的头像",
   "title": "你好，我是董宇",
-  "desc": "“知觉赋予感觉以意义”<br>研究兴趣：认知神经科学，临床咨询<br>求真、探索、坚持<br>邮箱：yudong196@163.com"
+  "desc": "“知觉赋予感觉以意义”<br>研究兴趣：认知神经科学<br>求真、探索、坚持<br>邮箱：yudong196@163.com"
   },
   "projects": {
    "title": "科研能力",
   "imgAlt": "项目图片",
   "viewDetail": "查看详情",
   "item1": {
-    "title": "文献阅读与写作",
-    "desc": "IELETS 6.0",
-    "tags": ["科研写作", "文献阅读", "学术规范"]
+    "title": "论文复现",
+    "desc": "心理学实证分析：Sun Y (2023) Happiness and mental health of older adults: multiple mediation analysis. Front. Psychol. 14:1108678. doi: 10.3389/fpsyg.2023.1108678",
+    "tags": ["数据清洗", "回归分析", "中介分析"]
    },
   "item2": {
     "title": "科研配图",

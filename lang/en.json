@@ -11,16 +11,16 @@
   "intro": {
     "avatarAlt": "Dongyu's Avatar",
     "title": "Hi, I'm Dongyu",
-    "desc": "Perception gives meaning to sensation<br>Research interests: Cognitive Neuroscience, Clinical Counseling<br>Seeking truth, exploring, and persisting<br>Email: yudong196@163.com"
+    "desc": "Perception gives meaning to sensation<br>Research interests: Cognitive Neuroscience<br>Seeking truth, exploring, and persisting<br>Email: yudong196@163.com"
   },
   "projects": {
     "title": "Research Capability",
     "imgAlt": "Project Image",
     "viewDetail": "View Details",
     "item1": {
-      "title": "Literature Review & Writing",
-      "desc": "IELTS 6.0",
-      "tags": ["Academic Writing", "Literature Review", "Research Standards"]
+      "title": "Research reproduction",
+      "desc": "Empirical analysis in psychology：Sun Y (2023) Happiness and mental health of older adults: multiple mediation analysis. Front. Psychol. 14:1108678. doi: 10.3389/fpsyg.2023.1108678",
+      "tags": ["Data cleaning", "Regression analysis", "Mediation analysis"]
     },
     "item2": {
       "title": "Scientific Visualization",
