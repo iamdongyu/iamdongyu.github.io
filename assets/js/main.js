@@ -1,7 +1,7 @@
 (() => {
   const PROJECTS = [
     {
-      img: 'assets/images/research1.png',
+      img: 'assets/images/research1.jpg',
       titleKey: 'projects.item1.title',
       descKey: 'projects.item1.desc',
       tagsKey: 'projects.item1.tags',
