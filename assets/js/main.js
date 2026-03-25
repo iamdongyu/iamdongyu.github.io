@@ -7,13 +7,13 @@
       tagsKey: 'projects.item1.tags',
     },
     {
-      img: 'img: 'https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/research2.jpg?v=1',',
+      img: 'https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/research2.jpg?v=1',
       titleKey: 'projects.item2.title',
       descKey: 'projects.item2.desc',
       tagsKey: 'projects.item2.tags',
     },
     {
-      img: 'img: 'https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/research3.jpg?v=1',,
+      img: 'https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/research3.jpg?v=1',
       titleKey: 'projects.item3.title',
       descKey: 'projects.item3.desc',
       tagsKey: 'projects.item3.tags',
@@ -58,20 +58,20 @@ const TIMELINE_EVENTS = [
 
 const TIMELINE_IMAGES = {
   'timeline.event4': [
-    ''https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work4-1.jpg?v=1'',
-    ''https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work4-2.jpg?v=1''
+    'https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work4-1.jpg?v=1',
+    'https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work4-2.jpg?v=1'
   ],
   'timeline.event3': [
-    ''https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work3-1.jpg?v=1'',
-    ''https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work3-2.jpg?v=1''
+    'https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work3-1.jpg?v=1',
+    'https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work3-2.jpg?v=1'
   ],
   'timeline.event2': [
-    ''https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work2-1.jpg?v=1'',
-    ''https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work2-2.jpg?v=1''
+    'https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work2-1.jpg?v=1',
+    'https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work2-2.jpg?v=1'
   ],
   'timeline.event1': [
-    ''https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work1-1.jpg?v=1'',
-    ''https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work1-2.jpg?v=1''
+    'https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work1-1.jpg?v=1',
+    'https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work1-2.jpg?v=1'
   ]
 };
 
