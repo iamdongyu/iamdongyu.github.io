@@ -1,19 +1,19 @@
 (() => {
   const PROJECTS = [
     {
-      img: 'assets/images/research1.jpg',
+      img: 'https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/research1.jpg?v=1',
       titleKey: 'projects.item1.title',
       descKey: 'projects.item1.desc',
       tagsKey: 'projects.item1.tags',
     },
     {
-      img: 'assets/images/research2.jpg',
+      img: 'img: 'https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/research2.jpg?v=1',',
       titleKey: 'projects.item2.title',
       descKey: 'projects.item2.desc',
       tagsKey: 'projects.item2.tags',
     },
     {
-      img: 'assets/images/research3.jpg',
+      img: 'img: 'https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/research3.jpg?v=1',,
       titleKey: 'projects.item3.title',
       descKey: 'projects.item3.desc',
       tagsKey: 'projects.item3.tags',
@@ -58,20 +58,20 @@ const TIMELINE_EVENTS = [
 
 const TIMELINE_IMAGES = {
   'timeline.event4': [
-    'assets/images/work4-1.jpg',
-    'assets/images/work4-2.jpg'
+    ''https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work4-1.jpg?v=1'',
+    ''https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work4-2.jpg?v=1''
   ],
   'timeline.event3': [
-    'assets/images/work3-1.jpg',
-    'assets/images/work3-2.jpg'
+    ''https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work3-1.jpg?v=1'',
+    ''https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work3-2.jpg?v=1''
   ],
   'timeline.event2': [
-    'assets/images/work2-1.jpg',
-    'assets/images/work2-2.jpg'
+    ''https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work2-1.jpg?v=1'',
+    ''https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work2-2.jpg?v=1''
   ],
   'timeline.event1': [
-    'assets/images/work1-1.jpg',
-    'assets/images/work1-2.jpg'
+    ''https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work1-1.jpg?v=1'',
+    ''https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/work1-2.jpg?v=1''
   ]
 };
 
@@ -239,8 +239,8 @@ const TIMELINE_IMAGES = {
         </div>
          
         <div class="practice-img-wrapper">
-             <img src="assets/images/${item.img1}" loading="lazy" class="practice-img">
-             <img src="assets/images/${item.img2}" loading="lazy" class="practice-img">
+            <img src="https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/${item.img1}?v=1" loading="lazy" class="practice-img">
+            <img src="https://cdn.jsdelivr.net/gh/iamdongyu/iamdongyu.github.io/assets/images/${item.img2}?v=1" loading="lazy" class="practice-img">
         </div>
         <div class="os-tags">${tagsHtml}</div>
         <div class="os-actions">${buttonsHtml}</div>
